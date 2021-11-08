@@ -10,7 +10,8 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git && \
     apt-get install -y sudo && \
-    apt-get install -y zip
+    apt-get install -y zip && \
+    apt-get install -y mariadb-client
 
 #Install Xdebug
 RUN pecl install "xdebug" || true \
